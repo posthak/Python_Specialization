@@ -10,12 +10,6 @@ if __name__ == '__main__':
     parser.add_argument('-scr', type=int, default=91)
 
     args = parser.parse_args()
-    print(args)
-    fio = str(args.fio)
-    fl = str(args.fl)
-    sbj = str(args.sbj)
-    gr = int(args.gr)
-    scr = int(args.scr)
-    start_(fio, fl, sbj, gr, scr)
+    start_(args.fio, args.fl, args.sbj, args.gr, args.scr)
 
     # запуск командной строкой:python3 python/project_run.py -fio='Иван Иванов' -fl='subjects.csv' -sbj='Математика' -gr=4 -scr=85
